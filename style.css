@@ -1,0 +1,43 @@
+body{
+    background: blue;
+    background-color: aquamarine;
+
+}
+.signup-box{
+    width: 360px;
+    height: 60px;
+    margin: auto;
+    background-color: beige;
+    border-radius: 3px;
+    text-align: center;
+    padding-left: 8px;
+}
+.login-box{
+    width: 360px;
+    height: 600px;
+    margin: auto;
+    background-color: blue;
+    border-radius: 3px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#inputText{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+}
+#loginbutton{
+    width: 250px;
+    height: 25px;
+    border: none;
+    color: black;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}

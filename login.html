@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <h1> Login</h1>
+    <div class="login-box">
+        <form >
+        <lottie-player
+              src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"
+              background="transparent"
+              speed="1"
+              style="justify-content: center;"
+              loop
+              autoplay
+            ></lottie-player>
+            </form>
+
+    <input type="text" name="user" id="un" placeholder="user name">
+    <br><br>
+    <input type="password" name="pass" id="pw" placeholder="password">
+    <br><br>
+    <i class="fas fa-eye" onclick="func()"></i>
+            <br />
+            <br />
+
+
+    <input type="button" value = "login" id="loginbutton" onclick ="func()">
+    <br><br>
+
+
+    <p>By clicking this Sign Up button, you agree to our <br>
+    <a href="#">Terms and conditions</a> and <a href="#">policy</a></p>
+    <div id = "outputvdiv"> </div>
+ </div> 
+
+ <style>
+    body{
+    background: blue;
+    background-color: aquamarine;
+
+}
+.login-box{
+    width: 360px;
+    height: 500px;
+    margin: auto;
+    background-color: beige;
+    border-radius: 3px;
+    text-align: center;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+.signup-box{
+    width: 360px;
+    height: 600px;
+    margin: auto;
+    background-color: blue;
+    border-radius: 3px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #48c9b0;
+  max-width: 160px;
+  margin: 0 auto 60px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#inputText{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 3px;
+    padding-top: 30px;
+
+}
+#loginbutton{
+    width: 250px;
+    height: 25px;
+    border: none;
+    color: black;
+    margin-top: 50px;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+ </style>
+ <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+ <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+ <script>
+    function func(){
+    let un = document.getElementById("un").value;
+    let pw = document.getElementById("pw").value;
+    var icon = document.querySelector(".fas");
+
+    
+    window.location.href = "wel.html";
+}
+ </script>
+ <p class="para-2">Not have an account? <a href="signup.html">Sign Up Here</a></p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<img
+          style="position: absolute; top: 0; left: 0; border: 0;"
+          
+      />
+<body>
+    <h1> Sign Up</h1>
+    <lottie-player
+    src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"
+    background="transparent"
+    speed="1"
+    style="justify-content: center;"
+    loop
+    autoplay
+></lottie-player>
+
+    <div class="signup-box">
+    <input type="text" name="Your name" id="un" placeholder="Your name">
+    <br><br>
+    <input type="text" name="user" id="un" placeholder="user name">
+    <br><br>
+    <input type="password" name="pass" id="pw" placeholder="password">
+    <br><br>
+    <input type="button" value = "signup" id="signupbutton" onclick ="func()">
+    <br><br>
+    <i class="fas fa-eye" onclick="func()"></i>
+
+    <p>By clicking this Sign Up button, you agree to our <br>
+    <a href="#">Terms and conditions</a> and <a href="#">policy</a></p>
+    <p class="para-2">Already have an account? <a href="login.html">Login Here</a></p>
+ </div> 
+ <style>
+    body{
+        background: aqua;
+    }
+    .signup-box{
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    background-color: beige;
+    border-radius: 3px;
+    text-align: center;
+    padding-left: 8px;
+    padding-top: 30px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#inputText{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+}
+#signupbutton{
+    width: 250px;
+    height: 25px;
+    border: none;
+    color: black;
+    margin-top: 50px;
+    
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+ </style>
+ 
+ <script>
+    function func(){
+    let un = document.getElementById("un").value;
+    let pw = document.getElementById("pw").value;
+        alert("You have successfully signed up")
+        window.location.href = "login.html"
+}
+ </script>
+</body>
+</html>
